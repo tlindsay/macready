@@ -11,7 +11,7 @@ export default () => {
   const colorMap = useLoader(TextureLoader, logo);
   const width = WIDTH * SCALE;
   const height = HEIGHT * SCALE;
-  return <mesh position={[0, -2.41, 0]}>
+  return <mesh name="Logo" position={[0, -0.29, 0]} scale={0.1}>
     <planeGeometry args={[width, height]} />
     <meshBasicMaterial transparent map={colorMap} />
   </mesh>
